@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+
+<html>
+<head> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+  <style>
+ 
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  min-width: 50px;
+hover:blue;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+   background: white;
+  color: black;
+}
+
+.one
+{
+background-color:black;
+width:100%;
+Text-align:center;
+color:white;
+Font-size:60px;
+font-family:Century;
+}
+
+.navbar {
+  background-color: maroon;
+
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background: white;
+  color: black;
+}
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky +.ritu {
+  padding: 16px;
+  margin-top: 30px;
+  }
+
+
+.two
+{
+font-size:40px;
+font-family:Calibri (Body);
+padding-left:100px;
+}
+
+.three{
+font-size:25px;
+font-family:Calibri (Body);
+}
+.navbarr {
+
+  background-color:red;
+  width: 100%;
+}
+
+.navbarr a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbarr a:hover {
+  background:gray;
+  color: black;
+}
+
+
+
+
+
+.line-center{
+    margin:0;padding:0 10px;
+    background:#fff;
+    display:inline-block;
+}
+
+
+
+
+h6{
+
+    text-align:center;
+    position:relative;
+    z-index:2;
+
+}
+h6:after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    right:0;
+    border-top:solid 1px black;
+    z-index:-1;
+}
+
+
+
+
+.footer{
+background-color:gray;
+color:white;
+
+}     
+.button {
+  background-color:black;
+  border: solid 1px white;
+  
+ color:white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:12px;
+  margin-top:15px;
+  cursor: pointer;
+  border-radius:8px;
+  
+}
+</style>
+
+</head>
+<body>
+
+<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">English |</a>
+    <div class="dropdown-content">
+      <a href="#">हिन्दी</a>
+      <a href="#">मराठी</a>
+      <a href="#">বাংলা </a>
+	       <a href="#">ગુજરાતી</a>
+		        <a href="#">ಕನ್ನಡ</a>
+				     <a href="#">தமிழ்</a>
+					      <a href="#"తెలుగు</a>
+						       <a href="#">മലയാളം</a></div>
+    </li>
+  <li><a href="#news">Epaper |</a></li>
+  <li><a href="#contact">GadgetsNow</a></li>
+  
+ 
+
+<li style="Float:right;padding-right:50px"><a href="#" class="fa fa-youtube"></a></li>
+<li style="Float:right;padding-right:5px"><a href="#" class="fa fa-rss"></a></li>
+ <li style="Float:right;padding-right:5px"><a href="#" class="fa fa-facebook"></a></li>
+<li style="Float:right;padding-right:5px"><a href="#" class="fa fa-twitter"></a></li>
+ <li style="Float:right;padding-right:5px"><a href="#about">SIGN IN</a></li>
+ 
+</ul>
+
+<div class="one">
+THE TIMES OF INDIA
+<br>
+<font style="font-size:30px">Lucknow  13 C</font>
+</div>
+
+
+<div class="navbar" id="myHeader">
+<a href="#news">Latest News</a>
+ <a href="#contact">Most Shared</a>
+  <a href="#contact">Most Read</a></li><li><a href="#contact">Most Commented</a>
+  <a href="#contact">Delhi Elections</a>
+ <a href="#contact">Bihar Elections</a>
+  </div>
+</div>
+<div class="ritu">
+  <div class="two">
+  <font style="font-size:12px">News Latest News</font>
+  <br>
+  <b>LATEST NEWS</b>
+  <hr style="height:2px;border-width:0;color:gray;background-color:black">
+  </div>
+  
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-7">
+  <div class="d1">
+</p>
+  <b>Union Budget 2021 explained  in 15 charts</b> <img src="i1.PNG" style="float:left;padding-right:10px"><br>
+  Finance minister Nirmala Sitharaman on Monday presented the 
+  first-ever digital Union Budget. She announced higher capital 
+  expenditure for 2021 and said this year's budget focused on six
+  pillars- health and wellbeing; physical and financial capital, 
+  and infrastructure; inclusive development; reinvigorating human capital; 
+  innovation and R&D; minimum govt, maximum governance.</p>
+  
+  <p><b>Union Budget 2021: Winners and losers</b><img src="i2.PNG" style="float:left;padding-right:10px"><br>
+  This was probably the toughest budget yet for Prime Minister Narendra Modi, 
+  as his government navigates the twin challenges of steering the $2.7-trillion
+  Indian economy out of an unprecedented recession. The farm sector received 
+  attention but there were no major announcements that could help address the 
+  ongoing protests for the repeal of new agriculture laws.</p>
+  
+  <p><b>  Budget for Aatmanirbhar Bharat: Highlights </b><img src="i3.PNG" style="float:left;padding-right:10px"><br>
+  Union finance minister Nirmala Sitharaman presented the Union Budget 2021 in 
+  Parliament on Monday. The finance minister provided a major boost to healthcare 
+  and infrastructure in Union Budget 2021.
+  However, there was no change in Income Tax slabs this year.</p>
+  
+  <p><b> Poll: Is the Union Budget good for you?</b><img src="i4.PNG" style="float:left;padding-right:10px"><br>
+  Finance minister Nirmala Sitharaman on Monday presented the 
+  first-ever digital Union Budget. She announced higher capital 
+  expenditure for 2021 and said this year's budget focused on six
+  pillars- health and wellbeing; physical and financial capital, 
+  and infrastructure; inclusive development; reinvigorating human capital; 
+  innovation and R&D; minimum govt, maximum governance.</p
+
+  <p><b> Union Budget: Your retirement savings hit, again</b><img src="i5.PNG" style="float:left;padding-right:10px"><br>
+The Union Budget 2021 has restricted the tax-free return on investment in a unit linked insurance plan 
+(ULIP) and provident fund at Rs 2.50 lakh each. Last year’s budget imposed a ceiling of Rs 7.5 lakh
+ a year on employers’ contribution to provident fund schemes. Now contributions of over Rs 2.5 lakh
+ a year to employee provident fund schemes will be taxed at the time of withdrawal.</p>
+
+ <b>Live: Farmers to block roads across India on Feb 6</b><img src="i6.PNG" style="float:left;padding-right:10px"><br></p>
+ <br>
+ <br><br>
+ <br>
+ <p> <b>Live: Budget for tourism ministry slashed by 19%</b><img src="i7.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+ <p><b>Defence budget hiked, more for modernisation</b><img src="i8.PNG" style="float:left;padding-right:10px"><br>
+ There was no big bang increase in the overall defence budget, but India did spend an additional 
+ unbudgeted Rs 20,776 crore on emergency arms procurements in the current fiscal in face of China’s
+ ongoing belligerence on the northern borders. The overall defence expenditure for 2021-2022 has been 
+ increased by a paltry sum to Rs 4,78,196 crore from last year’s Rs 4,71,378 crore</p>
+
+<p><b>How Union Budget 2021 may help IT companies</b><img src="i9.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+<p><b>Live: Rashtrapati Bhawan to reopen for public</b><img src="i9.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+ <p><b>Covid: Symptoms that can lead to hospitalization</b><img src="i10.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+<p><b>Budget 2021: Watch out for the devil in fine print</b><img src="i11.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+ <p><b>Phones to get expensive as customs duty up 2.5%</b><img src="i12.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+<p><b>I don't see Eng winning any Test vs India: Gambhir</b><img src="i3.PNG" style="float:left;padding-right:10px"><br>
+Former India opener Gautam Gambhir does not see the visiting England team winning any 
+Test in the upcoming four-match series with the kind of spin attack it has. England have
+ named the likes of Moeen Ali, Dom Bess and Jack Leach as spinners in their squad. 
+ "I don't see England winning any of the Test matches with the kind of spin attack they've got," Gambhir said.</p>
+ 
+ <p><b>Read Biyani's letter to employees on 'Amazon fight'</b><img src="i14.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+ <p><b>Review: Tata Safari, we miss you</b><img src="i15.PNG" style="float:left;padding-right:10px"><br>
+The 2021 Safari looks more of Harrier than anything else.
+ The length and height are extended, keeping the wheelbase 
+ intact, to accommodate the third row. Gravitas, by the popular view,
+ should have been the name of the SUV, and that wouldn’t have escalated 
+ this repeated point of comparison.</p>
+<p><b>Twitter blocks 250 accounts for 'fake' posts</b><img src="i16.PNG" style="float:left;padding-right:10px"><br>
+Twitter India on Monday blocked around 250 accounts on its platform on 
+the request of the ministry of electronics and information technology.
+ The suspended Twitter accounts were using 'Modi Planning Farmer Genocide'
+ hashtag and making fake, intimidatory and provocative Tweets on Jan 30, said sources.
+ Twitter said it withholds access if an authorized entity submits a request.</p>
+ <p><b>Investors gain over Rs 6L cr as mkts cheer budget</b><img src="i17.PNG" style="float:left;padding-right:10px"><br>
+Investors became richer by over Rs 6.34 lakh crore
+ on Monday as markets gave a big shout-out to the budget
+ 2021-22, which analysts termed as 'unprecedented' against the
+ backdrop of the pandemic-induced slowdown.</p>
+ <br>
+  <p><b>Union Budget 2021: Top takeaways</b><img src="i18.PNG" style="float:left;padding-right:10px"><br></p>
+<br>
+ <br><br>
+ <br>
+<p><b>How India is the hub of all those scam calls</b><img src="i19.PNG" style="float:left;padding-right:10px"><br>
+Every year, tens of millions of people collectively 
+lose billions of dollars to scam callers. Where does
+ the other end of the line lead?
+</p>
+
+</div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="col-sm-5">
+  
+  <div class ="three" >
+ <b> Most Popular</b>
+  </div>
+  <div class="navbarr">
+ <a href="#contact">Shared</a>
+  <a href="#contact">Commented</a>
+  <a href="#contact"> Read</a>
+  <a href="#contact">Trending</a>
+ 
+  </div>
+  <br>
+  <br>
+  <div name="four">
+  Sean loves shooting with Rituparna in Dehradun
+  <br>
+  <br>
+  Why is the military taking control in Myanmar
+  <br>
+  <br>
+  Sean loves shooting with Rituparna in Dehradun
+  <br>
+  <br>
+  Why is the military taking control in Myanmar
+  </div>
+  <h6><span  class="line-center">SEE ALL MOST SHARED STORIES</span></h6>
+  <div class ="t" >
+ <div class ="three" ><b> Enertainment News</b></div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:black">
+ <p><img src="j1.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j2.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j3.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j4.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j5.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+  
+  
+  <div class ="three" ><b> Business News</b></div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:black">
+ <p><img src="j6.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j7.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j8.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j9.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j10.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+  
+  
+ <div class ="three" ><b> TV News</b></div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:black">
+ <p><img src="j11.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j12.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j13.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j14.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j15.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+  
+  <div class ="three" >
+ <b> Sports News</b></div>
+ <hr style="height:2px;border-width:0;color:gray;background-color:black">
+ <p><img src="j16.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j17.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j18.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j19.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+ <p><img src="j20.PNG">Sean loves shooting with Rituparna in Dehradun</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  <div class="col-sm-6" style="background-color:black;">
+  Other Times Group news sites
+  <br>
+  <div class="col-sm-4">
+  <button class="button">The Economic Times</button><br>
+  <button class="button">Maharashtra Times</button><br>
+  <button class="button">Tamil Samayam</button><br>
+  <button class="button">I am Gujarat</button><br>
+  <button class="button">TimesPoints</button><br>
+   <button class="button"> Education Times</button><br>
+    <button class="button">Mumbai Mirror</button><br>
+	 <button class="button">Bangalore Mirror</button><br>
+	 <button class="button"> Bengali Podcast</button><br>
+  </div>
+  <div class="col-sm-4">
+   <button class="button">Hindi Economic Times</button><br>
+  <button class="button"> Vijaya Karnataka</button><br>
+  <button class="button"> Malayalam Samayam</button><br>
+    <button class="button">Times Now </button><br>
+	  <button class="button"> Brand Capital</button> <br> 
+	    <button class="button">Times Food</button><br>
+	 <button class="button">Pune Mirror </button> <br>
+	 <button class="button"> Hindi Podcast</button><br>
+	 <button class="button"> MX ShareKaro</button>
+  </div>
+  <div class="col-sm-4">
+   <button class="button">Telugu Samayam</button><br>
+    <button class="button">Ei Samay</button><br>
+  <button class="button"> Times Now Hindi</button><br>
+  <button class="button"> Brand Capital</button><br>
+    <button class="button">Miss Kyra</button><br>
+	  <button class="button"> Brand Capital</button> <br> 
+	    <button class="button">Ahmedabad Mirror</button><br>
+	 <button class="button">Pune Mirror </button> <br>
+	 <button class="button"> Hindi Podcast</button><br>
+	 <button class="button">MX TakaTak App</button>
+  </div>
+  </div>
+   
+ <div class="col-sm-6" style="background-color:black;">
+SERVICES
+<br>
+  <div class="col-sm-4">
+   <button class="button"> Ads 2 Book</button><br>
+  <button class="button"> CouponDunia</button><br>
+    <button class="button">Techgig</button><br>
+	  <button class="button"> Times Mobile</button> <br> 
+	    <button class="button">Astro Speak</button><br>
+	 <button class="button">Colombia </button>
+  </div>
+  
+<div class="col-sm-4">
+   <button class="button"> Bank Exam App</button><br>
+  <button class="button"> Dineout</button><br>
+    <button class="button">Times Jobs</button><br>
+	  <button class="button"> Remit 2 India</button> <br> 
+	    <button class="button">Gadgets Now</button><br>
+  
+  
+  </div>
+<div class="col-sm-4">
+  <button class="button"> ET Money Finance App</button><br>
+  <button class="button"> Magicbricks</button><br>
+    <button class="button">Bollywood News</button><br>
+	  <button class="button"> TC Next</button> <br> 
+	    <button class="button">Careers</button><br>
+  
+  
+  </div>
+
+  
+</body>
+</html>
+
